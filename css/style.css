@@ -23,48 +23,228 @@ body {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    background-color: #DFDFE7;
+    background-color: #F9FAFE;
     font-size: 14px;
 }
-
-
 
 /*
   Header
 */
+
 .header {
     overflow: hidden;
     background-color: #23233C;
     padding: 5px 10px;
 }
+
 .header a {
     float: left;
     color: #F9FAFE;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-  }
-  .header a.logo {
+}
+
+.header a.logo {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 14px;
-  }
-  .header-right {
+}
+
+.header-right {
     float: right;
-  }
+}
+
+.task-container {
+    height: calc(100vh - 120px);
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.task-card {
+    flex-shrink: 2;
+    width: 314px;
+    margin: 2px;
+    min-width: 230px;
+    background-color: #fff;
+    min-height: 100px;
+    padding-bottom: 20px
+}
+
+.task-header {
+    height: 50px;
+    background-color: #777AFC;
+}
+
+.add-btn-container {
+    padding: 10px 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: #9EA0EF;
+    box-shadow: 1px 7px 10px -2px #9ea0ef;
+    color: #F9FAFE;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-text {
+    text-decoration: none;
+}
+
+.task-header--text {
+    color: #F9FAFE;
+    line-height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.task-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-element {
+    width: 90%;
+    background-color: #f9fafe;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 6px 15px #DFDFE7;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.task-element--heading {
+    font-weight: 700;
+    color: #23233c;
+}
+
+.task-element--body {
+    color: #23233c;
+}
+
+/*Model */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 350px;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addListText {
+    padding: 5px;
+    margin: 9px 0px 0px 0px;
+}
+
+.add-list-btn {
+    padding: 0px;
+}
+
+.plus-button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-size: 21px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    padding: 0px 8px 0px 8px;
+    border-radius: 50px;
+    background-color: #0BDA85;
+    box-shadow: 1px 7px 10px -2px #23233c59;
+    cursor: pointer;
+}
+
+.tast-actions {
+    float: right;
+}
+
+.replace {
+    display: none;
+}
+
+.task-body-edit {
+    clear: both;
+    margin-right: 24px;
+}
 
 
+/* width */
+::-webkit-scrollbar {
+    height: 10px;
+}
 
-  .task-container{
-      width: 100%;
-      padding: 25px;
-  }
-  .task-card{
-      width: 30%;
-      display: inline-block;
-  }
-  .task-header{
-      height: 50px;
-      background-color: #777AFC;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

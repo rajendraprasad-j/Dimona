@@ -8,10 +8,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:700,400" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="./js/index.js"></script>
-
 </head>
 
 <body>
@@ -22,19 +18,90 @@
         </div>
     </div>
 
-    <!-- task card -->
-    <div class="task-container">
-        <div class="task-card">
-            <div class="task-header"></div>
-        </div>
-        <div class="task-card">
-            <div class="task-header"></div>
-        </div>
-        <div class="task-card">
-            <div class="task-header"></div>
+    <!--add button -->
+    <div class="add-btn-container">
+        <div class="btn add-btn" id="myBtn">
+            <a class="btn-text">+ Add</a>
         </div>
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Add A List</p>
+            <input class="addListText" placeholder="Enter the List Name" id="listName" type="text" />
+            <div class="add-btn-container add-list-btn">
+                <div class="btn add-btn" id="insert-list">
+                    <a class="btn-text">Add</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="addItemsModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="addItemsModal-close">&times;</span>
+            <p>Add Itemt</p>
+            <input class="addListText" placeholder="Enter task Title " id="itemName" type="text" />
+            <input class="addListText" placeholder="Enter task description " id="itemDesc" type="textarea" />
+
+            <div class="add-btn-container add-list-btn">
+                <div class="btn add-btn" id="insert-item">
+                    <a class="btn-text">Add</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- task card -->
+    <div class="task-container" id='task-container'>
+        <!-- <div class="task-card">
+            <div class="task-header">
+                <span class="task-header--text">Backlog</span>
+                <span class="plus-button" id="itemModelbtn">+</span>
+            </div>
+            <div class="task-list-container">
+                <div class="task-element">
+                    <div class="task-element--heading">
+                        To-do
+                        <div class="tast-actions">
+                            <img src="./images/edit.svg" alt="edit" height="20" width="20">
+                            <img src="./images/delete.svg" alt="edit" height="20" width="20">
+                        </div>
+                    </div>
+                    <div class="task-element--body">
+                        CJCP001: Set up development environment in Eclipse IDE to work on Java project
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task-card">
+            <div class="task-header"></div>
+        </div>
+        <div class="task-card">
+            <div class="task-header"></div>
+        </div> -->
+    </div>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./js/controller/initialize.js"></script>
+    <script src="./js/model/Board.js"></script>
+    <script src="./js/view/constructBoard.js"></script>
+    <script src="./js/view/model.js"></script>
+
+    <script>
+        window.addEventListener("load", app.view.constructBoard.setUp);  
+        window.addEventListener("load",app.view.modelInitialisation.setUp)  
+    </script>
 </body>
 
 </html>
