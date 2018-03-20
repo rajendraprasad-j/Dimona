@@ -1,0 +1,14 @@
+{
+  "name": "crypto_dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
