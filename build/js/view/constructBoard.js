@@ -62,7 +62,7 @@ app.view.constructBoard = {
                         </div>
                     </div>
                     <div class="task-element--body">
-                        <span id="itmb${item._id}">  ${item.description} </span><input id="itmb${item._id}b" class="replace" type="text" value=" ${item.description}">
+                        <span id="itmb${item._id}"style="word-wrap: break-word" >  ${item.description} </span><textarea id="itmb${item._id}b"  rows="4" class="replace" type="text" value=" ${item.description}"></textarea>
                         <div class="tast-actions task-body-edit">
                             <img src="./images/edit.svg" key="${key}" itemId="${item._id}" class="editIconBody" alt="edit" height="20" width="20">
                         </div>
