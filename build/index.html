@@ -2,17 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Bridge Creek</title>
+    <title>Dimona</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="./images/D_Logo.png" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Nunito:700,400" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="header">
-        <a href="#default" class="logo">Bridge Creek</a>
+        <a href="#default" class="logo">
+            <img class="logo_Dimona" src="./images/D_Logo.png" alt="Girl in a jacket"> Dimona
+        </a>
         <div class="header-right">
             <a>Prasad</a>
         </div>
@@ -62,34 +64,7 @@
     </div>
 
     <!-- task card -->
-    <div class="task-container" id='task-container'>
-        <!-- <div class="task-card">
-            <div class="task-header">
-                <span class="task-header--text">Backlog</span>
-                <span class="plus-button" id="itemModelbtn">+</span>
-            </div>
-            <div class="task-list-container">
-                <div class="task-element">
-                    <div class="task-element--heading">
-                        To-do
-                        <div class="tast-actions">
-                            <img src="./images/edit.svg" alt="edit" height="20" width="20">
-                            <img src="./images/delete.svg" alt="edit" height="20" width="20">
-                        </div>
-                    </div>
-                    <div class="task-element--body">
-                        CJCP001: Set up development environment in Eclipse IDE to work on Java project
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="task-card">
-            <div class="task-header"></div>
-        </div>
-        <div class="task-card">
-            <div class="task-header"></div>
-        </div> -->
-    </div>
+    <div class="task-container" id='task-container'></div>
 
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -99,8 +74,8 @@
     <script src="./js/view/model.js"></script>
 
     <script>
-        window.addEventListener("load", app.view.constructBoard.setUp);  
-        window.addEventListener("load",app.view.modelInitialisation.setUp)  
+        window.addEventListener("load", app.view.constructBoard.setUp);
+        window.addEventListener("load", app.view.modelInitialisation.setUp)
     </script>
 </body>
 

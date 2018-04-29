@@ -6,6 +6,26 @@
     "express": "^4.16.2"
   },
   "scripts": {
+    "compile:sass":"node-sass sass/main.scss build/css/style.css -w",
     "start": "node index.js"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajendraprasad-j/Dimona.git"
+  },
+  "keywords": [
+    "sass",
+    "trello"
+  ],
+  "author": "Rajendraprasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajendraprasad-j/Dimona/issues"
+  },
+  "homepage": "https://github.com/rajendraprasad-j/Dimona#readme"
 }
