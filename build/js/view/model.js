@@ -18,7 +18,7 @@ app.view.modelInitialisation = {
         let insertList = document.getElementById("insert-list");
         let insertItem = document.getElementById("insert-item")
 
-        let span = document.getElementsByClassName("close")[0];
+        let span = document.getElementById("model-close");
 
         let currentKey = "";
 

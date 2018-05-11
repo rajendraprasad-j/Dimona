@@ -24,9 +24,12 @@ body {
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 14px; }
-
-.header-right {
-  float: right; }
+  .header-right {
+    float: right; }
+  .header .logo__Dimona {
+    width: 34px;
+    margin-top: -8px;
+    margin-bottom: -13px; }
 
 .task-container {
   height: calc(100vh - 121px);
@@ -37,17 +40,12 @@ body {
   align-content: space-around;
   align-items: flex-start; }
 
-.logo_Dimona {
-  width: 34px;
-  margin-top: -8px;
-  margin-bottom: -13px; }
-
 .task-card {
   flex-shrink: 2;
   box-shadow: 1px 7px 10px -2px #23233c59;
   width: 314px;
   margin: 2px;
-  background-color: #fff;
+  background-color: color-white;
   min-height: 100px;
   padding-bottom: 20px; }
 
@@ -55,27 +53,24 @@ body {
   height: 50px;
   background-color: #777AFC; }
 
-.add-btn-container {
+.add__container {
   padding: 10px 30px 20px;
   text-align: center;
   display: flex;
   justify-content: flex-end; }
-
-.btn {
-  width: 100px;
-  padding: 5px;
-  border-radius: 5px; }
-
-.add-btn {
-  background-color: #9EA0EF;
-  box-shadow: 1px 7px 10px -2px #9EA0EF;
-  color: #F9FAFE;
-  letter-spacing: 1px;
-  font-weight: 700;
-  cursor: pointer; }
-
-.btn-text {
-  text-decoration: none; }
+  .add__container .btn {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px; }
+  .add__container .add-btn {
+    background-color: #9EA0EF;
+    box-shadow: 1px 7px 10px -2px #9EA0EF;
+    color: #F9FAFE;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer; }
+  .add__container .btn-text {
+    text-decoration: none; }
 
 .task-header--text {
   color: #F9FAFE;
@@ -94,7 +89,7 @@ body {
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 5px 6px 15px #DFDFE7;
+  box-shadow: 5px 6px 15px #dfdfe7;
   margin-top: 12px;
   cursor: pointer; }
 
@@ -108,54 +103,55 @@ body {
 /*Model */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 350px; }
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: -20px; }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
-.addListText {
-  padding: 5px;
-  margin: 9px 0px 0px 0px; }
-
-.add-list-btn {
-  padding: 0px; }
+  background-color: rgba(0, 0, 0, 0.4); }
+  .modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 350px; }
+  .modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px; }
+    .modal-close:hover, .modal-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer; }
+  .modal .addListText {
+    padding: 5px;
+    margin: 9px 0px 0px 0px; }
+  .modal .add-list-btn {
+    padding: 0px; }
+  .modal .add__container {
+    padding: 10px 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; }
+    .modal .add__container .btn {
+      width: 100px;
+      padding: 5px;
+      border-radius: 5px; }
+    .modal .add__container .add-btn {
+      background-color: #9EA0EF;
+      box-shadow: 1px 7px 10px -2px #9EA0EF;
+      color: #F9FAFE;
+      letter-spacing: 1px;
+      font-weight: 700;
+      cursor: pointer; }
+    .modal .add__container .btn-text {
+      text-decoration: none; }
 
 .plus-button {
   float: right;
@@ -180,19 +176,3 @@ body {
 .task-body-edit {
   clear: both;
   margin-right: 24px; }
-
-/* width */
-::-webkit-scrollbar {
-  height: 10px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; }

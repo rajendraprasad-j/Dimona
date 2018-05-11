@@ -12,8 +12,8 @@
 
 <body>
     <div class="header">
-        <a href="#default" class="logo">
-            <img class="logo_Dimona" src="./images/D_Logo.png" alt="Girl in a jacket"> Dimona
+        <a class="logo">
+            <img class="logo__Dimona" src="./images/D_Logo.png" alt="D"> Dimona
         </a>
         <div class="header-right">
             <a>Prasad</a>
@@ -21,7 +21,7 @@
     </div>
 
     <!--add button -->
-    <div class="add-btn-container">
+    <div class="add__container">
         <div class="btn add-btn" id="myBtn">
             <a class="btn-text">+ Add</a>
         </div>
@@ -32,10 +32,10 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="modal-close" id="model-close">&times;</span>
             <p>Add A List</p>
             <input class="addListText" placeholder="Enter the List Name" id="listName" type="text" />
-            <div class="add-btn-container add-list-btn">
+            <div class="add__container add-list-btn">
                 <div class="btn add-btn" id="insert-list">
                     <a class="btn-text">Add</a>
                 </div>
@@ -49,12 +49,12 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" id="addItemsModal-close">&times;</span>
+            <span class="modal-close" id="addItemsModal-close">&times;</span>
             <p>Add Itemt</p>
             <input class="addListText" placeholder="Enter task Title " id="itemName" type="text" />
             <input class="addListText" placeholder="Enter task description " id="itemDesc" type="textarea" />
 
-            <div class="add-btn-container add-list-btn">
+            <div class="add__container add-list-btn">
                 <div class="btn add-btn" id="insert-item">
                     <a class="btn-text">Add</a>
                 </div>
