@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "npm-run-all": "^4.1.2"
   },
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss build/css/style.css -w",
-    "start": "node index.js"
+    "compile:sass": "node-sass sass/main.scss build/css/style.css -w",
+    "security-check": "nsp check",
+    "run-server": "node index.js",
+    "start": "npm-run-all --parallel security-check run-server"
   },
   "description": "",
   "main": "index.js",

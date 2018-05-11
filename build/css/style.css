@@ -1,16 +1,3 @@
-/*
-    lightWhite -#F9FAFE
-    lightgrey -#DFDFE7
-    Black - #23233C
-    Blue - #777AFC
-    green-#OBDA85
-    grey - #A1A1A4
-    orange - #F4B076
-    blue- #9EA0EF
-*/
-/*
-Universal selector
-*/
 * {
   margin: 0;
   padding: 0;
@@ -23,26 +10,20 @@ body {
   background-color: #F9FAFE;
   font-size: 14px; }
 
-/*
-  Header
-*/
 .header {
   overflow: hidden;
-  background-color: #23233C;
-  padding: 5px 10px; }
-
-.header a {
-  float: left;
-  color: #F9FAFE;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none; }
-
-.header a.logo {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 14px; }
+  background-color: #23233C; }
+  .header a {
+    float: left;
+    color: #F9FAFE;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none; }
+    .header a.logo {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px; }
 
 .header-right {
   float: right; }
@@ -87,7 +68,7 @@ body {
 
 .add-btn {
   background-color: #9EA0EF;
-  box-shadow: 1px 7px 10px -2px #9ea0ef;
+  box-shadow: 1px 7px 10px -2px #9EA0EF;
   color: #F9FAFE;
   letter-spacing: 1px;
   font-weight: 700;
@@ -163,7 +144,8 @@ body {
   font-weight: bold;
   margin-top: -20px; }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer; }
