@@ -1,50 +1,15 @@
-$color-primary:#777AFC;
-$color-lightWhite:#F9FAFE;
-$color-black:#23233C;
-$color-black-shadow:#23233c59;
-$color-lightgrey:#dfdfe7;
-$color-blue:#9EA0EF;
-$color-white:#FFF;
+@import "abstracts/variables";
+@import "abstracts/functions";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "base/base";
+@import "base/animation";
+@import "base/utilities";
 
-body {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  background-color: $color-lightWhite;
-  font-size: 14px;
-}
 
-.header {
-  overflow: hidden;
-  background-color: $color-black;
-  a {
-    float: left;
-    color: $color-lightWhite;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    &.logo {
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 14px;
-    }
-  }
-  &-right{
-    float: right;
-  }
-  .logo__Dimona {
-    width: 34px;
-    margin-top: -8px;
-    margin-bottom: -13px;
-  }
-}
+@import "components/model";
+
+
+@import "layout/header";
 
 
 .task-container {
@@ -134,73 +99,10 @@ body {
 
 /*Model */
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 350px;
-  }
-  &-close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: -20px;
-    &:hover,
-    &:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  }
-  .addListText {
-    padding: 5px;
-    margin: 9px 0px 0px 0px;
-  }
-  
-  .add-list-btn {
-    padding: 0px;
-  }
 
-  .add__container {
-    padding: 10px 30px 20px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    .btn {
-      width: 100px;
-      padding: 5px;
-      border-radius: 5px;
-    }
-    
-    .add-btn {
-      background-color: $color-blue;
-      box-shadow: 1px 7px 10px -2px $color-blue;
-      color: $color-lightWhite;
-      letter-spacing: 1px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    
-    .btn-text {
-      text-decoration: none;
-    }
-  }
 
-}
+
+
 
 
 

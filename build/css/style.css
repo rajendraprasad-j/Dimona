@@ -10,6 +10,58 @@ body {
   background-color: #F9FAFE;
   font-size: 14px; }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 350px; }
+  .modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px; }
+    .modal-close:hover, .modal-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer; }
+  .modal .addListText {
+    padding: 5px;
+    margin: 9px 0px 0px 0px; }
+  .modal .add-list-btn {
+    padding: 0px; }
+  .modal .add__container {
+    padding: 10px 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; }
+    .modal .add__container .btn {
+      width: 100px;
+      padding: 5px;
+      border-radius: 5px; }
+    .modal .add__container .add-btn {
+      background-color: #9EA0EF;
+      box-shadow: 1px 7px 10px -2px #9EA0EF;
+      color: #F9FAFE;
+      letter-spacing: 1px;
+      font-weight: 700;
+      cursor: pointer; }
+    .modal .add__container .btn-text {
+      text-decoration: none; }
+
 .header {
   overflow: hidden;
   background-color: #23233C; }
@@ -101,58 +153,6 @@ body {
   color: #23233C; }
 
 /*Model */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4); }
-  .modal .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 350px; }
-  .modal-close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: -20px; }
-    .modal-close:hover, .modal-close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer; }
-  .modal .addListText {
-    padding: 5px;
-    margin: 9px 0px 0px 0px; }
-  .modal .add-list-btn {
-    padding: 0px; }
-  .modal .add__container {
-    padding: 10px 30px 20px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end; }
-    .modal .add__container .btn {
-      width: 100px;
-      padding: 5px;
-      border-radius: 5px; }
-    .modal .add__container .add-btn {
-      background-color: #9EA0EF;
-      box-shadow: 1px 7px 10px -2px #9EA0EF;
-      color: #F9FAFE;
-      letter-spacing: 1px;
-      font-weight: 700;
-      cursor: pointer; }
-    .modal .add__container .btn-text {
-      text-decoration: none; }
-
 .plus-button {
   float: right;
   margin-top: 10px;

@@ -1,0 +1,26 @@
+
+.header {
+  overflow: hidden;
+  background-color: $color-black;
+  a {
+    float: left;
+    color: $color-lightWhite;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    &.logo {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
+  }
+  &-right{
+    float: right;
+  }
+  .logo__Dimona {
+    width: 34px;
+    margin-top: -8px;
+    margin-bottom: -13px;
+  }
+}
